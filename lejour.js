@@ -8,10 +8,6 @@ var swiper = new Swiper(".main-slider", {
     delay: 4000,
     disableOnInteraction: false,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
 });
 
 //
@@ -21,9 +17,9 @@ setTimeout(function(){
     $(".menu_list ul").eq(0).show();
   },100);
 
-$("main section").each(function(){
+$("main .menubar").each(function(){
   var tab = $(this).find(".cate a");
-  var cont = $(this).find(".menu_list ul");
+  var cont = $(this).find(".menu_list ");
 
   tab.click(function(){
     var ind=$(this).index();
@@ -36,25 +32,39 @@ $("main section").each(function(){
   });
 });
 // 이벤트슬라이드
-var swiper = new Swiper(".slider", {
-  spaceBetween: 0,
-  centeredSlides: true,
-  loop: true,
-	speed : 3000,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+// var swiper = new Swiper(".event_slide", {
+//   spaceBetween: 0,
+//   centeredSlides: true,
+//   loop: true,
+// 	speed : 3000,
+//   autoplay: {
+//     delay: 3000,
+//     disableOnInteraction: false,
+//   },
+// });
+
 
 // 리뷰슬라이드
 var swiper = new Swiper(".review", {
-  slidesPerView: 3,
-  spaceBetween: 20,
+  // slidesPerView: auto,
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    }
+  },
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,

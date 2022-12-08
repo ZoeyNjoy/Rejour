@@ -91,8 +91,13 @@ nav .inner{
     line-height: 40px;
     text-align: center;
 }
+.top_nav .cart{
+    text-align: left;
+    background:url(./image/cart.png) no-repeat 90% center;
+}
 .top_nav .search{
     width: 15%;
+    background:url(./image/search.png) no-repeat center;
 }
 .inner a{
     font-size: .8rem;
@@ -178,33 +183,27 @@ nav .snb{
 }
 .swiper-slide img{
     width: 100%;
-}
-.swiper-button-next,
-.swiper-button-prev{
-    color: rgba(255, 255, 255, 0.5);
-}
-.swiper-button-next:hover,
-.swiper-button-prev:hover{
-    color: #fff;
-    transition: all .3s;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* ㅁㅔ인 */
 main{
     width: 100%;
     z-index: -1;
+    /* margin-top: 55%; */
 }
 main::before{
     content: '';
     display: block;
-    margin-top: 55%;
+    margin-top: 50%;
 }
 
 /* 이벤트 */
 main .event{
     position: relative;
-    width: 1200px;
-    margin: 50px auto;
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     background-color: #fff;
@@ -258,7 +257,7 @@ main section h1{
     font-weight: 300;
 }
 main section .cate{
-    width: 960px;
+    max-width: 960px;
     margin: 50px auto 30px;
     display: flex;
 }
@@ -285,19 +284,20 @@ main section .active{
     transition: all .2s ease-in-out;
 }
 main section .menu_list{
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
+    overflow: hidden;
 }
 main section .menu_list ul{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     opacity: 1;
 }
 main section .menu_list li{
-    width: 285px;
+    width: 24%;
 }
-main section .menu_list li:not(:nth-last-child(1)){
-    margin-right: 20px;
+.menu_list li:not(:last-child){
+    margin-right: 1.3%;
 }
 .menu_list li img{
     width: 100%;
@@ -369,21 +369,19 @@ main section .more{
 }
 
 /* 메인 내부 이벤트슬라이드 */
-.slider{
+.event_slide{
     width: 100%;
     overflow: hidden;
-}
-.slider .swiper-wrapper{
-    width: 100%;
-}
-.swiper-wrapper .swiper-slide{
-    width: 100%;
+    position: relative;
 }
 .swiper-slide img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .swiper-button-next,
 .swiper-button-prev{
+    position: absolute;
     color: rgba(255, 255, 255, 0.5);
 }
 .swiper-button-next:hover,
@@ -399,7 +397,7 @@ main section .review{
     overflow: hidden;
     color: #666;
 }
-.swiper-slide .photo{
+.review li .photo{
     width: 100%;
     height: 0;
     padding-bottom: 65%;
@@ -491,10 +489,50 @@ footer section{
     padding: 80px 0;
 }
 footer .foot-top{
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
+}
+.foot-top .foot-right{
+    width: 33%;
+    height: 0;
+    padding-bottom: 20%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #53513d;
+    position: relative;
+}
+.foot-right p{
+    color: #fff;
+}
+.foot-right p:nth-of-type(1){
+    position: absolute;
+    top: 10%;
+    left: 8%;
+}
+.foot-right p:nth-of-type(2){
+    width: 35%;
+    position: absolute;
+    letter-spacing: 3px;
+    top: 25%;
+    left: 8%;
+    font-size: 1.5rem;
+}
+.foot-right .arrow{
+    position: absolute;
+    left: 8%;
+    top: 65%;
+    width: 20%;
+}
+.foot-right .bg-img{
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    right: 2%;
+}
+.foot-right img{
+    width: 100%;
 }
 .foot-top .foot-left{
     width: 65%;
@@ -607,14 +645,16 @@ footer .foot-top{
     width: 48%;
     padding-left: 15px;
     box-sizing: border-box;
-    background:#e7c35d url(./image/arrow_b.png) no-repeat 90% center;
+    background:#e7c35d url(./image/arrow_b.svg) no-repeat 90% center;
+    background-size: 20%;
 }
 .btn-box .faq{
     width: 48%;
     padding-left: 15px;
     box-sizing: border-box;
     color: #fff;
-    background:#52503a url(./image/arrow_w.png) no-repeat 90% center;
+    background:#52503a url(./image/arrow_w.svg) no-repeat 90% center;
+    background-size: 20%;
 }
 footer .foot-bottom{
     width: 100%;
@@ -623,7 +663,7 @@ footer .foot-bottom{
     position: relative;
 }
 .foot-bottom .fnb{
-    width:1200px;
+    max-width:1200px;
     margin: 50px auto;
 }
 .fnb ul{
@@ -644,6 +684,9 @@ footer .foot-bottom{
     font-size: 1.2rem;
     color: #666;
 }
+.fnb li{
+    width: 10%;
+}
 .fnb li:nth-of-type(1){
     width: 15%;
 }
@@ -654,7 +697,7 @@ footer .foot-bottom{
     width: 25%;
 }
 .foot-bottom .ft-company{
-    width: 1200px;
+    max-width: 1200px;
     margin: 100px auto;
     position: relative;
     font-size: .8rem;

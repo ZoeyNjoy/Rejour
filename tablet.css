@@ -1,5 +1,106 @@
 nav .inner{
     width: 100%;
     margin: auto;
-    margin-top: 0;
+    padding: 20px 0;
+}
+.gnb ul{
+    max-width: 100%;
+}
+.top_nav .cart{
+    text-align: center;
+    background:none;
+}
+.fixed{
+    top: 0;
+}
+nav .snb{
+    width: 100%;
+}
+.slide_menu ul{
+    padding: 0 50px 0 70px;
+}
+.slide_menu p{
+    padding-right: 70px;
+}
+/* 메인슬라이드 */
+.main-slider{
+    top: 80px;
+}
+
+/* 메인 */
+main{
+    margin-top: 60%;
+}
+main .event{
+    width: 95%;
+}
+main section{
+    width: 95%;
+    margin: 100px auto;
+}
+main section .cate{
+    width: 100%;
+}
+main section .cate a{
+    width: 100%;
+}
+main section .menu_list{
+    width: 100%;
+}
+
+/* *가운데 정렬 해결하기 */
+.event_slide{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.event_slide img{
+    width: 150%;
+    height: 150%;
+    object-fit : cover;
+    object-position: 75% 75%;
+}
+
+
+/*메인 리뷰부분 */
+main section .review{
+    width: 90%;
+    margin-top: 20px;
+}
+.review li .photo{
+    width: 100%;
+    padding-bottom: 65%;
+    position: relative;
+}
+.swiper-slide .review-txt{
+    padding: 20px 20px;
+    height: 130px;
+}
+.swiper-button-next,
+.swiper-button-prev{
+    display: none;
+}
+
+
+
+/* 메인 인스타  */
+main section .insta{
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.insta li{
+    width:32%;
+    padding: 1% 0;
+    box-sizing: border-box;
+}
+.insta img{
+    width: 100%;
+}
+
+
+footer .foot-top{
+    width: 90%;
+}
+.foot-bottom .fnb{
+    width: 90%;
 }
