@@ -119,6 +119,82 @@ footer .foot-top{
     top: 30%;
     right: 0;
 }
+/* 푸터 하단 */
 .foot-bottom .fnb{
     width: 90%;
+}
+.fnb .foot-tit{
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2rem;
+    color: #666;
+}
+.fnb li{
+    width: 25%;
+}
+.fnb li:nth-of-type(1){
+    width: 20%;
+}
+.fnb li:nth-of-type(2){
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fnb .cs-txt p{
+    width: 50%;
+}
+.cs-txt p:nth-of-type(1),
+.cs-txt p:nth-of-type(2){
+    width: 100%;
+}
+.foot-bottom .ft-company{
+    width: 90%;
+    margin: 100px auto;
+    position: relative;
+    font-size: .8rem;
+    line-height: 25px;
+    color: #53513d;
+}
+.foot-bottom .ft-company::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    height: 1px;
+    background-color: #53513d;
+}
+.ft-company .license{
+    font-size: .6rem;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #333;
+}
+.foot-bottom .ft-sns{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.ft-sns ul{
+    display: flex;
+}
+.ft-sns li{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-color: #878570;
+}
+.ft-sns img{
+    width: 100%;
+}
+.foot-bottom .ft-certify{
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    width: 74px;
+    height: 74px;
+    background: url(./image/inipay_74x74_color.png);
 }

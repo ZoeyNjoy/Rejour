@@ -565,7 +565,6 @@ footer .foot-top{
 .cs-box li:nth-of-type(4){
     width: 90%;
     line-height: 20px;
-    border: 1px solid red;
 }
 .info .ac-box{
     width: 50%;
@@ -673,6 +672,7 @@ footer .foot-bottom{
 }
 .fnb ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .fnb p{
