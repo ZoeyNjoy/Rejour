@@ -15,16 +15,17 @@ a{text-decoration: none; color: #666;}
     text-align: center;
     z-index: 10;
 }
-.top a{
-    display: block;
-    color: #ddd;
-}
 html,body{
     font-family: 'Noto Sans', sans-serif;
     font-size: 1vw;
 }
 body{
     background-color: #f0e7db;
+}
+
+.top a{
+    display: block;
+    color: #ddd;
 }
 header{
     width: 100%;
@@ -494,50 +495,11 @@ footer .foot-top{
     display: flex;
     justify-content: space-between;
 }
-.foot-top .foot-right{
-    width: 33%;
-    height: 0;
-    padding-bottom: 20%;
-    box-sizing: border-box;
-    overflow: hidden;
-    background-color: #53513d;
-    position: relative;
-}
-.foot-right p{
-    color: #fff;
-}
-.foot-right p:nth-of-type(1){
-    position: absolute;
-    top: 10%;
-    left: 8%;
-}
-.foot-right p:nth-of-type(2){
-    width: 35%;
-    position: absolute;
-    letter-spacing: 3px;
-    top: 25%;
-    left: 8%;
-    font-size: 1.5rem;
-}
-.foot-right .arrow{
-    position: absolute;
-    left: 8%;
-    top: 65%;
-    width: 20%;
-}
-.foot-right .bg-img{
-    width: 40%;
-    position: absolute;
-    top: 30%;
-    right: 2%;
-}
-.foot-right img{
-    width: 100%;
-}
 .foot-top .foot-left{
     width: 65%;
 }
 .foot-left .notice{
+    padding: 0 20px;
     border-top: 1px solid #888;
     border-bottom: 1px solid #888;
 }
@@ -566,6 +528,7 @@ footer .foot-top{
     position: relative;
 }
 .foot-left .info{
+    width: 100%;
     display: flex;
 }
 .info .cs-box{
@@ -600,8 +563,9 @@ footer .foot-top{
 }
 .cs-box li:nth-of-type(3),
 .cs-box li:nth-of-type(4){
-    height: 20px;
+    width: 90%;
     line-height: 20px;
+    border: 1px solid red;
 }
 .info .ac-box{
     width: 50%;
@@ -656,6 +620,47 @@ footer .foot-top{
     background:#52503a url(./image/arrow_w.svg) no-repeat 90% center;
     background-size: 20%;
 }
+.foot-top .foot-right{
+    width: 33%;
+    height: 0;
+    padding-bottom: 20%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #53513d;
+    position: relative;
+}
+.foot-right p{
+    color: #fff;
+}
+.foot-right p:nth-of-type(1){
+    position: absolute;
+    top: 10%;
+    left: 8%;
+}
+.foot-right p:nth-of-type(2){
+    width: 35%;
+    position: absolute;
+    letter-spacing: 3px;
+    top: 25%;
+    left: 8%;
+    font-size: 1.5rem;
+}
+.foot-right .arrow{
+    position: absolute;
+    left: 8%;
+    top: 65%;
+    width: 20%;
+}
+.foot-right .bg-img{
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    right: 2%;
+}
+.foot-right img{
+    width: 100%;
+}
+/* 푸터하단 */
 footer .foot-bottom{
     width: 100%;
     background-color: #bbb8a5;
