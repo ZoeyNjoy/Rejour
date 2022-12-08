@@ -183,6 +183,16 @@ nav .snb{
 }
 .blank{
     padding-top: 80px;
+    animation: blank .5s;
+}
+@keyframes blank{
+    0%{
+        padding-top: 150px;
+        opacity: 0;
+    }
+    100%{
+        padding-top: 80px;
+        opacity: 1;}
 }
 .main-slider .swiper-wrapper{
     width: 100%;
