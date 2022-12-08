@@ -1,0 +1,63 @@
+html,body{
+    font-size: 2vw;
+}
+
+
+nav .inner{
+    width: 100%;
+    margin-top: 0;
+}
+.inner .logo{
+    border: 1px solid red;
+    width: 30%;
+    margin: auto;
+}
+.inner .fa-bars{
+  display: block;
+}
+.inner .gnb{
+    width: 100%;
+    margin-top: 10%;
+    /* display: none; */
+    border: 1px solid red;
+}
+.gnb ul{
+    width: 100%;
+}
+.gnb li{
+    width: 100%;
+    line-height: 50px;
+}
+.gnb li a{
+    display: block;
+    font-size: 1.2rem;
+    border: 1px solid red;
+}
+.inner .gnb_right{
+    width: 100%;
+    margin-top: 5%;
+}
+.gnb_right .top_nav{
+    width: 70%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+.top_nav li{
+    width: 26%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.top_nav .cart{
+    text-align: center;
+    background:none;
+}
+.top_nav .search{
+    width: 15%;
+    background:url(./image/search.png) no-repeat center;
+}
+.inner a{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
