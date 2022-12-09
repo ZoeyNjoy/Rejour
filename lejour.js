@@ -19,7 +19,7 @@ setTimeout(function(){
 
 $("main .menubar").each(function(){
   var tab = $(this).find(".cate a");
-  var cont = $(this).find(".menu_list ");
+  var cont = $(this).find(".menu_list ul");
 
   tab.click(function(){
     var ind=$(this).index();
