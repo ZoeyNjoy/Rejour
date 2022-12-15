@@ -18,6 +18,7 @@ nav .inner{
 }
 nav .snb{
     width: 100%;
+    position: absolute;
 }
 .slide_menu ul{
     padding: 0 50px 0 70px;
@@ -29,45 +30,58 @@ nav .snb{
 .main-slider{
     top: 80px;
 }
-
 /* 메인 */
 main{
-    margin-top: 60%;
+    position: relative;
+    top: 80px;
+    padding: 0;
 }
 main .event{
     width: 95%;
-}
-main section{
-    width: 95%;
-    margin: 100px auto;
-}
-main section .cate{
-    width: 100%;
-}
-main section .cate a{
-    width: 100%;
-}
-main section .menu_list{
-    width: 100%;
+    margin: 0px auto;
 }
 
-/* *가운데 정렬 해결하기 */
+/* 셀렉트 */
+main .menubar{
+    width: 95%;
+    margin: 80px auto 150px;
+}
+main .menubar .cate{
+    width: 100%;
+}
+main .menubar .cate a{
+    width: 12.5%;
+}
+main .menubar .active{
+    font-weight: 800;
+    border-bottom: 2px solid #666;
+    transition: all .2s ease-in-out;
+}
+main .menubar .menu_list{
+    width: 100%;
+}
+.more p:hover{
+    color: initial;
+    background-color: #e7c35d;
+    transition: all .3s;
+}
+
+/* 메인 이벤트 슬라이드 부분 */
 .event_slide{
     width: 100%;
     overflow: hidden;
-    position: relative;
 }
-.event_slide img{
-    width: 150%;
-    height: 150%;
-    object-fit : cover;
-    object-position: 75% 75%;
+.event_slide .swiper-slide{
+    height: 450px;
 }
-
 
 /*메인 리뷰부분 */
-main section .review{
-    width: 90%;
+main .review-wrap{
+    width: 100%;
+    position: relative;
+}
+main .review-wrap .review{
+    width: 80%;
     margin-top: 20px;
 }
 .review li .photo{
@@ -86,9 +100,15 @@ main section .review{
 
 
 
-/* 메인 인스타  */
-main section .insta{
-    margin-top: 20px;
+/* 메인 인스타  *//* 메인 인스타  */
+main .insta-wrap{
+    width: 100%;
+    margin-bottom: 200px;
+}
+main .insta-wrap h1{
+    margin: 15px;
+}
+main .insta-wrap .insta{
     flex-wrap: wrap;
 }
 .insta li{

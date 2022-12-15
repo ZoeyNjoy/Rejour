@@ -17,9 +17,8 @@ nav .inner{
 }
 .inner .gnb{
     width: 100%;
-    margin-top: 10%;
-    /* display: none; */
-    border: 1px solid red;
+    margin-top: 5%;
+    display: none;
 }
 .gnb ul{
     width: 100%;
@@ -31,15 +30,14 @@ nav .inner{
 .gnb li a{
     display: block;
     font-size: 1.2rem;
-    border: 1px solid red;
 }
 .inner .gnb_right{
     width: 100%;
     margin-top: 5%;
+    display: none;
 }
 .gnb_right .top_nav{
     width: 70%;
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
 }
@@ -60,4 +58,344 @@ nav .inner{
 .inner a{
     font-size: 1rem;
     text-transform: uppercase;
+}
+.click{
+    margin-bottom: 300px;
+    animation: clickslide 1s;
+}
+@keyframes clickslide{
+    0%{
+        margin-bottom: 0;
+    }
+    100%{
+        margin-bottom: 300px;
+    }
+}
+
+
+/* 서브메뉴 */
+nav .snb{
+    position: absolute;
+    top: 22%;
+    z-index: 10;
+    width: 100%;
+    margin: auto;
+}
+.snb .slide_menu{
+    width: 100%;
+    padding-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+.slide_menu ul{
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.slide_menu p{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: 50%;
+    padding-right: 0px;
+}
+
+/* 메인 슬라이드 */
+.main-slider{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: absolute;
+    top: 87px;
+    z-index: -1;
+}
+
+/* 이벤트 */
+main .event{
+    width: 80%;
+    display: block;
+}
+.event .event_content{
+    width: 100%;
+}
+
+/* 셀렉트 */
+main .menubar{
+    width: 95%;
+    margin: 150px auto;
+    position: relative;
+}
+main .menubar h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+}
+.menubar .cate{
+    width: 100%;
+}
+.menubar .cate a{
+    width: 12.5%;
+}
+.menubar .menu_list{
+    width: 100%;
+}
+.menubar .menu_list ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 1;
+}
+.menubar .menu_list li{
+    width: 48.7%;
+    margin-top: 10px;
+}
+.menu_list li:not(:last-child,:nth-of-type(2)){
+    margin-right: 1.3%;
+}
+.menu_list li img{
+    width: 100%;
+    object-fit: cover;
+    background-color: #daceb2;
+}
+.menu_list li:nth-child(even) img{
+    background-color: #bab7a4;
+}
+.menu_list li:hover img{
+    opacity: 0.7;
+    transition: all .3s;
+}
+.menu_list li .txt{
+    width: 100%;
+    height: 150px;
+    margin-top: -5px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.txt p:nth-of-type(1){
+    font-size: .9rem;
+    line-height: 30px;
+    color: #bab7a4;
+}
+.txt p:nth-of-type(2){
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+.txt p:nth-of-type(3) span{
+    color:#bab7a4;
+    font-size: .9rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    position: relative;
+    margin-right: 30px;
+}
+.txt p:nth-of-type(3) span::before{
+    content: '→';
+    display: block;
+    font-size: 1.1rem;
+    position: absolute;
+    right: -20px;
+    color: #666;
+}
+.txt p:nth-of-type(3){
+    font-size: 1.2rem;
+    line-height: 50px;
+    font-weight: 600;
+}
+.menubar .more{
+    width: 200px;
+    margin:50px auto;
+}
+.more p{
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .8rem;
+    background-color: #53513d;
+}
+.more p:hover{
+    color: initial;
+    background-color: #e7c35d;
+    transition: all .3s;
+}
+
+/* 메인 이벤트 슬라이드 */
+.event_slide{
+    width: 100%;
+    overflow: hidden;
+}
+.event_slide .swiper-slide{
+    height: 450px;
+}
+
+
+/*메인 리뷰부분 */
+main .review-wrap{
+    width: 100%;
+    position: relative;
+}
+main .review-wrap .review{
+    width: 95%;
+    margin-top: 20px;
+}
+.review li .photo{
+    width: 100%;
+    padding-bottom: 60%;
+    position: relative;
+}
+.swiper-slide .review-txt{
+    padding: 25px 20px;
+    /* height: 150px; */
+}
+.swiper-button-next,
+.swiper-button-prev{
+    display: none;
+}
+
+
+
+
+/* 푸터 */
+footer{
+    width: 100%;
+    margin-top: 100px
+}
+footer section{
+    width: 100%;
+    background-color: #e4d8c3;
+    padding: 50px 0;
+}
+footer .foot-top{
+    width: 100%;
+    flex-wrap: wrap;
+}
+.foot-top .foot-left{
+    width: 95%;
+    margin: auto;
+}
+.foot-left .notice{
+    display: none;
+}
+.foot-left .info{
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    /* border: 1px solid red; */
+}
+.foot-top .foot-right{
+    width: 95%;
+    margin: auto;
+    padding-bottom: 35%;
+    top: 15px;
+}
+.foot-right p:nth-of-type(1){
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    font-size: 1.5rem;
+}
+.foot-right p:nth-of-type(2){
+    width: 35%;
+    position: absolute;
+    letter-spacing: 3px;
+    top: 40%;
+    left: 8%;
+    font-size: 2rem;
+}
+.foot-right .arrow{
+    position: absolute;
+    left: 35%;
+    top: 60%;
+    width: 15%;
+}
+.foot-right .bg-img{
+    width: 35%;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+}
+
+/* 푸터하단 */
+.foot-bottom .fnb{
+    width: 95%;
+    margin: 0px auto;
+}
+.fnb ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.fnb .foot-tit{
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2rem;
+    color: #666;
+}
+.fnb li{
+    width: 100%;
+}
+.fnb li:nth-of-type(1){
+    width: 40%;
+}
+.fnb li:nth-of-type(1) img{
+    width: 80%;
+}
+.fnb li:nth-of-type(2){
+    width: 100%;
+}
+.foot-bottom .ft-company{
+    max-width: 1200px;
+    margin: 100px auto;
+    position: relative;
+    font-size: .8rem;
+    line-height: 25px;
+    color: #53513d;
+}
+.foot-bottom .ft-company::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    height: 1px;
+    background-color: #53513d;
+}
+.ft-company .license{
+    font-size: .6rem;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #333;
+}
+.foot-bottom .ft-sns{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.ft-sns ul{
+    display: flex;
+}
+.ft-sns li{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    background-color: #878570;
+}
+.ft-sns img{
+    width: 100%;
+}
+.foot-bottom .ft-certify{
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    width: 74px;
+    height: 74px;
+    background: url(./image/inipay_74x74_color.png);
 }

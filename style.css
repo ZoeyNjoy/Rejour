@@ -31,6 +31,10 @@ header{
     width: 100%;
     background-color: rgba(255, 255, 255, 0);
 }
+header nav{
+    width: 100%;
+    position: relative;
+}
 nav .inner{
     width: 85%;
     margin: auto;
@@ -112,6 +116,8 @@ nav .inner{
 
 /* 서브메뉴 */
 nav .snb{
+    /* position: absolute; */
+    z-index: 10;
     width: 85%;
     margin: auto;
 }
@@ -183,16 +189,18 @@ nav .snb{
 }
 .blank{
     padding-top: 80px;
-    animation: blank .5s;
+    opacity: 1;
+    animation: blank 1s;
 }
 @keyframes blank{
     0%{
-        padding-top: 150px;
+        padding-top: 200px;
         opacity: 0;
     }
     100%{
         padding-top: 80px;
-        opacity: 1;}
+        opacity: 1;
+    }
 }
 .main-slider .swiper-wrapper{
     width: 100%;
@@ -209,8 +217,7 @@ nav .snb{
 /* ㅁㅔ인 */
 main{
     width: 100%;
-    z-index: -1;
-    /* margin-top: 55%; */
+    opacity: 0;
 }
 main::before{
     content: '';
@@ -261,33 +268,32 @@ main .event{
     width: 0px;
 }
 
-
 /* section */
-main section{
+main .menubar{
     width: 80%;
     margin: 150px auto;
     position: relative;
 }
 
 /* 셀렉트 */
-main section h1{
+main .menubar h1{
     text-align: center;
     font-size: 3rem;
     font-weight: 300;
 }
-main section .cate{
+.menubar .cate{
     max-width: 960px;
     margin: 50px auto 30px;
     display: flex;
 }
-main section .cate a{
+.menubar .cate a{
     width: 120px;
     height: 40px;
     line-height: 40px;
     text-align: center;
     position: relative;
 }
-main section .cate a:not(:last-child):before{
+.menubar .cate a:not(:last-child):before{
     content: '';
     width: 1px;
     height: 15px;
@@ -297,22 +303,22 @@ main section .cate a:not(:last-child):before{
     right:0px;
     transform: translateY(-50%);
 }
-main section .active{
+.menubar .active{
     font-weight: 800;
     border-bottom: 2px solid #666;
     transition: all .2s ease-in-out;
 }
-main section .menu_list{
+.menubar .menu_list{
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
 }
-main section .menu_list ul{
+.menubar .menu_list ul{
     width: 100%;
     display: flex;
     opacity: 1;
 }
-main section .menu_list li{
+.menubar .menu_list li{
     width: 24%;
 }
 .menu_list li:not(:last-child){
@@ -368,7 +374,7 @@ main section .menu_list li{
     line-height: 50px;
     font-weight: 600;
 }
-main section .more{
+.menubar .more{
     width: 200px;
     margin:50px auto;
 }
@@ -393,24 +399,25 @@ main section .more{
     overflow: hidden;
     position: relative;
 }
-.swiper-slide img{
+.event_slide .swiper-slide img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.swiper-button-next,
-.swiper-button-prev{
-    position: absolute;
-    color: rgba(255, 255, 255, 0.5);
-}
-.swiper-button-next:hover,
-.swiper-button-prev:hover{
-    color: #fff;
-    transition: all .3s;
-}
 
 /* 메인 리뷰섹션 */
-main section .review{
+main .review-wrap{
+    width: 80%;
+    margin: 100px auto;
+    position: relative;
+}
+main .review-wrap h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 80px;
+}
+main .review-wrap .review{
     width: 85%;
     margin: auto;
     overflow: hidden;
@@ -473,8 +480,8 @@ main section .review{
     text-align: center;
     font-size: .9rem;
 }
-main section .swiper-button-prev,
-main section .swiper-button-next{
+main .review-wrap .swiper-button-prev,
+main .review-wrap .swiper-button-next{
     position: absolute;
     top: 70%;
     transform: translateY(-50%);
@@ -482,11 +489,21 @@ main section .swiper-button-next{
 }
 
 /* 메인 인스타(sns부분) */
-main section .insta{
+main .insta-wrap{
+    width: 100%;
+    margin: 100px 0px;
+}
+main .insta-wrap .insta{
     width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
+}
+main .insta-wrap h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 40px;
 }
 .insta li{
     width: 15.8%;
@@ -501,6 +518,7 @@ main section .insta{
 /* 푸터 */
 footer{
     width: 100%;
+    margin-top: 100px
 }
 footer section{
     width: 100%;
