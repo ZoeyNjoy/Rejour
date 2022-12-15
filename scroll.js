@@ -6,6 +6,7 @@ $(window).scroll(function() {
     // $("main").hide();
     if(lnb <= window){
       $("header nav").addClass("fixed");
+      $("main").show();
       $("main").addClass("blank");
     } else {
       $("header nav").removeClass("fixed");

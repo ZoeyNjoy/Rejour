@@ -113,6 +113,9 @@ nav .snb{
     z-index: -1;
 }
 
+main{
+    opacity: 1;
+}
 /* 이벤트 */
 main .event{
     width: 80%;
