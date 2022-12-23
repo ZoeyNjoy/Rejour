@@ -36,6 +36,7 @@ header nav{
     position: relative;
 }
 nav .inner{
+    position: relative;
     width: 85%;
     margin: auto;
     margin-top: 20px;
@@ -46,10 +47,19 @@ nav .inner{
     align-items: center;
     background-color: #fff;
 }
+nav .inner::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top:80px;
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+}
 .inner .fa-bars{
     display: none;
 }
-.fixed{
+nav.fixed{
     width: 100%;
     position: fixed;
     top: -20px;
@@ -116,16 +126,17 @@ nav .inner{
 
 /* 서브메뉴 */
 nav .snb{
-    /* position: absolute; */
+    position: absolute;
+    left: 0;
     z-index: 10;
-    width: 85%;
+    width: 100%;
     margin: auto;
 }
 .snb .slide_menu{
     width: 100%;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     display: flex;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 .slide_menu ul{
     width: 30%;
