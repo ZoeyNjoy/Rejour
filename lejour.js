@@ -14,6 +14,25 @@ $(window).scroll(function() {
     }
 });
 
+
+//헤더 메뉴바
+var lnb = $(".inner").offset().top;
+$(window).scroll(function() {
+  	var window = $(this).scrollTop();
+
+    // $("main").hide();
+    if(lnb <= window){
+      $("header nav").addClass("fixed");
+      $("main").show();
+      $("main").addClass("blank");
+    } else {
+      $("header nav").removeClass("fixed");
+      $("main").removeClass("blank");
+    }
+});
+
+
+
 // 모바일 아코디언메뉴
 $('.m_sub .depth02').hide();
 $(".m_sub a").on('click', function () {
