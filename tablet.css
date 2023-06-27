@@ -51,7 +51,10 @@ main .menubar .cate{
     width: 100%;
 }
 main .menubar .cate a{
-    width: 12.5%;
+    width: 25%;
+    font:  500 1.5rem/3em 'Noto Sans', sans-serif;
+    text-align: center;
+    position: relative;
 }
 main .menubar .active{
     font-weight: 800;
