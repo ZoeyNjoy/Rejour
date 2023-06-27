@@ -73,7 +73,7 @@ nav.fixed{
     text-align: center;
 }
 .gnb li a{
-    font-size: .8rem;
+    font:  500 .8rem 'Noto Sans', sans-serif;
 }
 .inner .gnb_right{
     width: 28%;
@@ -84,7 +84,7 @@ nav.fixed{
 .gnb_right select{
     width: 120px;
     height: 30px;
-    font-size: .8rem;
+    font:  500 .8rem 'Noto Sans', sans-serif;
     text-transform: uppercase;
     text-align: center;
     background-color: rgba(58, 74, 24, 0);
@@ -110,7 +110,7 @@ nav.fixed{
     background:url(./image/search.png) no-repeat center;
 }
 .inner a{
-    font-size: .8rem;
+    font:  500 .8rem 'Noto Sans', sans-serif;
     text-transform: uppercase;
 }
 
@@ -148,8 +148,7 @@ nav .snb{
     text-transform: uppercase;
 }
 .slide_menu .main_tit a{
-    font-weight: 500;
-    font-size: 1.2rem;
+    font:  500 1.2rem 'Noto Sans', sans-serif;
 }
 .slide_menu .main_tit::before{
     content: '>';
@@ -163,15 +162,13 @@ nav .snb{
     line-height: 1.4rem;
 }
 .slide_menu li a{
-    font-weight: 200;
-    font-size: .8rem;
+    font:  200 .8rem 'Noto Sans', sans-serif;
 }
 .slide_menu .title{
     margin-top: 15px;
 }
 .slide_menu .title a{
-    font-size: 1rem;
-    font-weight: 500;
+    font:  500 1rem 'Noto Sans', sans-serif;
     letter-spacing: 1px;
 }
 .slide_menu p{
@@ -267,10 +264,11 @@ main .event{
     background-color: #f0e7db;
 }
 .event_content h1{
-    font-weight: 100;
+    font:  100 2rem 'Noto Sans', sans-serif;
     text-transform: uppercase;
 }
 .event_content p{
+    font:  100 1.5rem 'Noto Sans', sans-serif;
     margin-top: 20px;
 }
 .event .event_content:hover{
@@ -290,8 +288,7 @@ main .menubar{
 }
 main .menubar h1{
     text-align: center;
-    font-size: 3rem;
-    font-weight: 300;
+    font:  300 3rem 'Noto Sans', sans-serif;
 }
 .menubar .cate{
     max-width: 960px;
@@ -316,7 +313,7 @@ main .menubar h1{
     transform: translateY(-50%);
 }
 .menubar .active{
-    font-weight: 800;
+    font:  800 1rem 'Noto Sans', sans-serif;
     border-bottom: 2px solid #666;
     transition: all .2s ease-in-out;
 }
@@ -354,18 +351,17 @@ main .menubar h1{
     background-color: #fff;
 }
 .txt p:nth-of-type(1){
-    font-size: .9rem;
+    font:  500 .9rem 'Noto Sans', sans-serif;
     line-height: 30px;
     color: #bab7a4;
 }
 .txt p:nth-of-type(2){
-    font-size: 1.1rem;
+    font:  500 1.1rem 'Noto Sans', sans-serif;
     line-height: 30px;
 }
 .txt p:nth-of-type(3) span{
     color:#bab7a4;
-    font-size: .9rem;
-    font-weight: 400;
+    font:  400 .9rem 'Noto Sans', sans-serif;
     text-decoration: line-through;
     position: relative;
     margin-right: 30px;
@@ -373,7 +369,7 @@ main .menubar h1{
 .txt p:nth-of-type(3) span::before{
     content: '→';
     display: block;
-    font-size: 1.1rem;
+    font:  500 1.1rem 'Noto Sans', sans-serif;
     position: absolute;
     right: -20px;
     color: #666;
