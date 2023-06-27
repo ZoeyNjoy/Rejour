@@ -536,10 +536,8 @@ footer .foot-top{
     justify-content: space-between;
 }
 .notice li{
-    height: 30px;
-    line-height: 30px;
+    font: 500 1rem/30px 'Noto Sans', sans-serif;
     margin: 10px 0;
-    font-size: 1rem;
     color: #333;
 }
 .notice li:nth-of-type(1){
@@ -558,7 +556,7 @@ footer .foot-top{
 }
 .info .cs-box{
     width: 50%;
-    font-size: .9rem;
+    font: 500 .9rem 'Noto Sans', sans-serif;
     color: #666;
     margin-top: 20px;
     position: relative;
@@ -574,16 +572,11 @@ footer .foot-top{
     background-color: #53513d;
 }
 .cs-box li:nth-of-type(1){
-    height: 30px;
-    line-height: 30px;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font: 500 1.2rem/2em 'Noto Sans', sans-serif;
     color: #52503a;
 }
 .cs-box li:nth-of-type(2){
-    font-size: 2.5rem;
-    line-height: 3rem;
-    font-weight: 500;
+    font: 500 2.5rem/2em 'Noto Sans', sans-serif;
     color: #52503a;
 }
 .cs-box li:nth-of-type(3),
@@ -593,23 +586,17 @@ footer .foot-top{
 }
 .info .ac-box{
     width: 50%;
-    font-size: .9rem;
+    font: 500 .9rem/2em 'Noto Sans', sans-serif;
     color: #666;
     margin-top: 20px;
     position: relative;
 }
 .ac-box li:nth-of-type(1){
-    height: 30px;
-    line-height: 30px;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font: 500 1.2rem/2em 'Noto Sans', sans-serif;
     color: #52503a;
 }
 .ac-box li:nth-of-type(2){
-    height: 40px;
-    line-height: 40px;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font: 500 1.5rem/2em 'Noto Sans', sans-serif;
     color: #52503a;
 }
 .ac-box li:nth-of-type(3){
@@ -625,9 +612,7 @@ footer .foot-top{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 40px;
-    line-height: 40px;
-    font-size: .8rem;
+    font: 500 1rem/3em 'Noto Sans', sans-serif;
 }
 .btn-box .qna{
     width: 48%;
@@ -667,7 +652,7 @@ footer .foot-top{
     letter-spacing: 3px;
     top: 25%;
     left: 8%;
-    font-size: 1.5rem;
+    font: 500 1.5rem/2em 'Noto Sans', sans-serif;
 }
 .foot-right .arrow{
     position: absolute;
@@ -696,35 +681,32 @@ footer .foot-bottom{
     margin: 50px auto;
 }
 .fnb ul{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .fnb p{
     margin-top: 6px;
-    font-size: .9rem;
-    font-weight: 300;
     color: #53513d;
-    letter-spacing: -0.7px;
+    letter-spacing: -0.5px;
+    font: 300 .9rem/2em 'Noto Sans', sans-serif;
 }
 .fnb .foot-tit{
-    font-weight: 500;
-    height: 40px;
-    line-height: 40px;
-    font-size: 1.2rem;
+    font: 500 1.2rem/2em 'Noto Sans', sans-serif;
     color: #666;
 }
 .fnb li{
     width: 10%;
 }
 .fnb li:nth-of-type(1){
-    width: 15%;
+    width: 20%;
 }
 .fnb li:nth-of-type(1) img{
     width: 80%;
 }
 .fnb li:nth-of-type(2){
-    width: 25%;
+    width: 30%;
 }
 .foot-bottom .ft-company{
     max-width: 1200px;

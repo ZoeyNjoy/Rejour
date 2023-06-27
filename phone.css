@@ -265,6 +265,26 @@ main .review-wrap .review{
     display: none;
 }
 
+/* 메인 인스타  */
+main .insta-wrap{
+    width: 100%;
+    margin-bottom: 200px;
+}
+main .insta-wrap h1{
+    margin: 15px;
+}
+main .insta-wrap .insta{
+    flex-wrap: wrap;
+}
+.insta li{
+    width:32%;
+    padding: 1% 0;
+    box-sizing: border-box;
+}
+.insta img{
+    width: 100%;
+}
+
 
 
 
