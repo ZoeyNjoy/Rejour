@@ -273,13 +273,9 @@ main .insta-wrap{
 main .insta-wrap h1{
     margin: 15px;
 }
-main .insta-wrap .insta{
-    flex-wrap: wrap;
-}
 .insta li{
     width:32%;
     padding: 1% 0;
-    box-sizing: border-box;
 }
 .insta img{
     width: 100%;

@@ -488,6 +488,7 @@ main .insta-wrap .insta{
     width: 100%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 main .insta-wrap h1{
