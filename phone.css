@@ -12,13 +12,9 @@ nav.fixed{
 }
 
 /* 모바일메뉴 */
-header{
-    width: 100%;
-    padding-top: 20px;
-    background-color: #fff;
-}
 header nav{
     width: 100%;
+    padding-top: 20px;
 }
 header nav.on{
     height: 100%;
